@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Coda+Caption:wght@800&family=Karla:wght@200&display=swap" rel="stylesheet"> 
+
+<!--------------------------------Toggle menu------------------------------> 
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+        $('#togI').click(function(){
+            $('ul').toggleClass('show');
+        })
+        $('.nav-link').click(function(){
+                $('#menu').removeClass('show');
+            })
+    });
+   
+</script> 
+<!--------------------------------Toggle menu------------------------------> 
+    <title>Sandy's Gym</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div  id="home" class="header">
+        <!-- NAVBAR SECTION START-->
+        <img src="2.jpg" alt="" srcset="">
+        <div class="navbar" >
+            
+            <div class="logo">
+                <h5>SA</h5>
+                <h4>NDY</h4>
+            </div>
+            <ul id= "menu" class="new">
+                <li  ><a class="nav-link" href="#home">Home</a> </li>
+                <li><a class="nav-link" href="#Offers">Offers</a> </li>
+                <li><a class="nav-link" href="#OurServices">Service</a> </li>
+                <li><a class="nav-link" href="#ContactUs">Contact</a> </li>
+            </ul>
+            <label id="togI" onclick="myFunction()">
+                <i class="fas fa-bars"></i>
+            </label>
+        </div>
+        <!-- NAVBAR SECTION END-->
+        <!-- HEADER SECTION START-->
+
+        <span style="font-family: 'Courgette', cursive;">PERFACTION</span><br>
+        <p style="font-family: 'Karla', sans-serif;"> Take Care Of Your Body</p>
+    </div>
+    <!-- HEADER SECTION END-->
+
+    <!--OFFER SECTION START-->
+    <div id="Offers" class="offers">
+        <div class="offer1">
+            <div class="offer_img"><img src="aerobics.jpg" alt="" srcset=""></div>
+            <div class="description">
+                <p> aerobic</p><br>
+                <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam,
+                    incidunt</h6>
+            </div>
+        </div>
+        <div class="offer2">
+            <div class="offer_img"><img src="gym.jpg" alt="" srcset=""></div>
+            <div class="description">
+                <p>gym</p><br>
+                <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam,
+                    incidun</h6>
+            </div>
+        </div>
+        <div class="offer3">
+            <div class="offer_img"><img src="nutrionist.jpg" alt="" srcset=""></div>
+            <div class="description">
+                <p>neutrition</p><br>
+                <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam,
+                    incidunt</h6>
+            </div>
+        </div>
+    </div>
+    <!--------------------OFFER SECTION END------------>
+    <!--------------------OUR SERVICES SECTION END------------>
+
+ <div id="OurServices" class="services">
+        <div class="service">
+            <h3>WHAT OUR SERVICES</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, <br>
+                incidunt eius magni provident, omnis minus ovident, doloribus omnis minus temporibus perferendis
+                nesciunt..</p>
+
+
+            <div class="service1">
+
+                <img src="6.jpg" alt="" srcset="">
+                <h2>Aerobics</h2><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam,
+                    incidunt</p>
+            </div>
+
+
+            <div class="service1"><img src="6.jpg" alt="" srcset="">
+                <h2>Cardio</h2><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam,
+                    incidunt</p>
+            </div>
+
+            <div class="service1"><img src="6.jpg" alt="" srcset="">
+                <h2>Events</h2><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam,
+                    incidunt</p>
+            </div>
+            <div class="service1"><img src="6.jpg" alt="" srcset="">
+                <h2>Consulting</h2><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam,
+                    incidunt</p>
+            </div>
+            <div class="service1"><img src="6.jpg" alt="" srcset="">
+                <h2>GYM</h2><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam,
+                    incidunt</p>
+            </div>
+            <div class="service1"><img src="6.jpg" alt="" srcset="">
+                <h2>SPA Energy</h2><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam,
+                    incidunt</p>
+            </div>
+        </div>
+    </div>  
+    <!--------------------OUR SERVICES SECTION END------------>
+
+    <!--------------------Contact us START------------>
+ <footer>
+        <div id ="ContactUs" class="contact">+91-999999999999</div>
+        <div class="contact"><a style="text-decoration: none;color:white" href="#">facebook.com/ABCD</a></div>
+        <div class="contact"><a style="text-decoration: none;color:white" href="#">abcdefg@ABCD.com</a></div>
+        <div class="contact">ADDRESS <br>
+            Lorem ipsum dolor <br>
+            odit error mollitia</div> 
+
+ <!--------------------Contact us End------------>
+
+
+    </footer> 
+</body>
+
+</html>

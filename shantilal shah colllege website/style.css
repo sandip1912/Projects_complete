@@ -1,0 +1,519 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    transition: .5s ease-in-out;
+}
+ .header{
+    
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+}
+.header img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+}
+.nav{
+    width: 100%;
+    height: 20vh;
+    background-color: transparent;
+
+}
+.nav img{
+    width: 15vw;
+    height: 20vh;
+    margin-top:2vh;
+}
+
+.nav ul{
+display: inline-flex;
+float: right;
+
+}
+.nav ul li{
+    list-style: none;
+    width: 12vw;
+    height: 10vh;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-shadow: 0px 0px 10px black;
+    margin: 5vh 1vw ;
+    text-align: center;
+}
+.nav ul li a{
+    text-decoration:none;
+    color: rgb(0, 0, 0);
+}
+
+#togI{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    margin-right: 40px;
+    line-height: 80px;
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+.principal{
+    width: 100%;
+    height: 225vh;
+    position: absolute;
+    top: 100vh;
+
+}
+.principal .about{
+    float: left;
+    width: 42vw;
+    height: 90vh;
+    margin: 10vh 4vw;
+    
+}
+.principal .about span{
+    font-size: 2rem;
+    color: rgb(26, 209, 26);
+    word-break: break-all;
+
+}
+
+.principal .about p{
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 6vh;
+    word-break: break-all;
+}
+.principal .message{
+    float: right;
+   width: 42vw;
+    height: 90vh;
+    margin: 10vh 2vw; 
+}
+
+.principal .message img{
+width: 80%;
+border-radius: 50%;
+box-shadow: 0 0 10px black;
+margin: 5vh 5vw;
+
+}
+
+.principal .message span{
+    font-size: 2rem;
+    color: rgb(26, 209, 26);
+    word-break: break-all;
+
+}
+
+.textmessage{
+    text-align: left;
+    width: 42vw;
+    margin: 0 0vw;
+    
+    word-break: break-all;
+    font-size: 1.2rem;
+    line-height: 6vh;
+}
+
+.announcemet{
+    width: 100%;
+    height: 60vh;
+    position: absolute;
+    top: 325vh;
+    color: black;
+    padding: 2vh;
+}
+.announcement1{
+    box-shadow: 0px 0px 25px rgb(12, 243, 81);
+    width: 30vw;
+    height: 50vh;
+    color: black;
+    float: left;
+    margin: 2vh 1vw;
+    padding: 1vh 1vw;
+    overflow: scroll;
+}
+
+.announcetital {
+    color:black;
+    float: right;
+    width: 19vw;
+    font-size: 1.3rem;
+   margin: 1vh 0.6vw;
+}
+
+.announcementdetal{
+    width: 28vw;
+    border-bottom: 5px solid rgb(13, 248, 44);
+   height: 18vh;
+    
+    padding: 2vh 1.3vw;
+    margin: -1vh 0vw;
+    text-align: bottom;
+}
+.announcementdetal a{
+    color: black;
+    text-decoration: none;   
+}
+
+.gallery{
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    top: 385vh;
+   
+}
+
+.gallery .g1{
+     box-shadow: 0px 0px 25px rgb(16, 116, 3);
+    width: 30vw;
+    height: 40vh;
+    padding: 2vh 2vw;
+    float:left;
+    margin: 5vh 1.2vw;
+    color: black;
+
+    text-align: center;
+}
+.gallery .g1 span{
+    color: rgb(32, 240, 32);
+    font-size: 1.2rem;
+}
+ .gallery .g1 iframe{
+     width: 25vw;
+     height: 30vh;
+     margin-top: 2vh ;
+ }
+
+.links{
+      width: 100%;
+      height: 70vh;
+      position: absolute;
+      top:435vh;  
+      padding-top: 5vh ;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+     
+  } 
+    
+.contact{
+     box-shadow: 0 0 10px black;
+    float: left;
+    width:30%;
+    height:46vh;  
+    text-align: center;
+    margin: 1vh 1vw;
+    padding: 1vh 1vw;
+    line-height: 4vh;
+}
+.contact span{
+    font-size: 1.4rem;
+
+}
+.contact p{
+    font-size: 1.2rem;
+}
+.link1{
+    box-shadow: 0 0 10px black;
+    float: left;
+    width:30%;
+    height:46vh;
+    text-align: center;
+    margin: 1vh 1vw;
+    padding: 2vh 0vw;
+}
+.link1 h4{
+    font-size: 1.5rem;
+}
+.link2{
+width: 13vw;
+height: 32vh;
+float: left;
+line-height: 4vh;
+margin: 1vh 1vw;
+padding: 2.5vh 0;
+text-align: center;
+font-size: 1.3rem;
+overflow: scroll;
+}
+
+
+.social{
+     box-shadow: 0 0 10px black;
+    float: left;
+    width:30%;
+    height:46vh;
+    text-align: center;
+    margin: 1vh 1vw;
+    padding: 1vh 1vw;
+}
+.social p{
+    font-size: 3rem;
+
+}
+.social h4{
+font-size: 2rem;
+}
+
+
+
+/* --------------------------------------MEDIA QUERY START-------------------------------------- */
+
+@media screen and (min-width : 320px) and (max-width : 880px){
+    .nav ul {
+        position: fixed;
+        width: 100%;
+        height: 70vh;
+        background-color: rgb(23, 24, 31);
+        top: 80px;  
+        left: -100%;              
+        transition:all .5s;
+        text-align: center;
+        display: block;
+        z-index: 3;
+    }
+    #togI{
+        display: block;
+        margin-left: 90vw;
+        position: fixed;
+    }
+    .nav ul li{
+       display:block;
+        width: 80%;
+        background-color: tomato;
+        height: 8vh;
+      margin: 5vh 10vw;
+      line-height: 8vh;
+    }li a{
+        color: white;
+    }
+    ul.show{
+        left: 0;
+    }
+    .header{
+   
+    width: 100%;
+    height: 100vh;
+   
+
+}
+
+
+.nav{
+    width: 100%;
+    height: 20vh;
+    background-color: transparent;
+}
+.nav img{
+    width: 25vw;
+    margin-top:2vh;
+}
+
+.principal{
+    width: 100%;
+    height: 560vh;
+    position: absolute;
+    top: 100vh;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.principal .about{
+    width: 85vw;
+    height: 220vh;
+    padding: 2vh;
+    margin-bottom: 5vh;
+    
+}
+.principal .about span{
+    font-size: 2rem;
+    color: rgb(26, 209, 26);
+    
+
+}
+
+.principal .about p{
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 6vh;
+    
+}
+.principal .message{
+    width: 85vw;
+    height: 295vh;
+
+    padding: 3vh;
+}
+
+.principal .message img{
+border-radius: 50%;
+box-shadow: 0 0 10px black;
+margin: 5vh 5vw;
+
+}
+
+.principal .message span{
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(26, 209, 26);
+    
+}
+
+.textmessage{
+    text-align: left;
+    width: 85vw;
+    word-break: initial;  
+    padding: 2vh 6vw;    
+    font-size: 1.2rem;
+    line-height: 6vh;
+
+ }
+
+.announcemet{
+    width: 100%;
+    height: 200vh;
+    position: absolute;
+    top: 660vh;
+    color: black;
+    padding: 2vh;
+}
+.announcement1{
+    width: 85vw;
+    height: 50vh;
+    color: black;
+    text-align: center;
+    margin: 7vh 4vw;
+    padding: 1vh 1vw;
+    border: 1px solid rgb(4, 85, 4);
+}
+
+.announcetital {
+    color:black;
+    float: right;
+    width: 60vw;
+    font-size: 2rem;
+   margin: 1vh 0.6vw;
+}
+
+.announcementdetal{
+    width: 80vw;
+    border-bottom: 5px solid rgb(13, 248, 44);
+     height: 25vh;
+    font-size: 1.4rem;
+    padding: 7vh 1.3vw;
+    margin: -1vh 0vw;
+    text-align: center;
+}
+.announcementdetal a{
+    color: black;
+    text-decoration: none;  
+    margin-top: 20px;
+    margin-top: 20px; 
+}
+
+.gallery{
+    width: 100%;
+    height: 240vh;
+    position: absolute;
+    top: 860vh;
+}
+
+.gallery .g1{
+    width: 85vw;
+    height: 70vh;
+    padding: 1vh 1vw;
+    float:left;
+    margin: 5vh 6vw;
+    color: black;
+    
+    text-align: center;
+}
+.gallery .g1 span{
+    color: rgb(32, 240, 32);
+    font-size: 2rem;
+}
+ .gallery .g1 iframe{
+     width: 70vw;
+     height: 55vh;
+     margin: 4vh 2vw ;
+     border: 1px solid black;
+  }
+  .links{
+      width: 100%;
+      height: 200vh;
+      position: absolute;
+      top:1100vh;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+   
+  } 
+    
+.contact{
+    box-shadow: 0 0 10px black;
+    width:85vw;
+    height:50vh;
+   
+    text-align: center;
+    margin: 5vh 5vw;
+    padding: 3vh 2vw;
+}
+.contact span{
+    font-size: 1.3rem;
+    line-height: 6vh;
+
+}
+.contact p{
+    font-size: 1.3rem ;
+}
+.link1{
+    box-shadow: 0 0 10px black;
+    width:85vw;
+    height:55vh;
+    text-align: center;
+    padding: 1vh 3.5vw ;
+}
+.link1 h4{
+    font-size: 1.4rem;
+}
+.link2{
+box-shadow: 0 0 10px black;
+width: 40%;
+height: 40vh;
+float: left;
+line-height: 4vh;
+text-align: center;
+padding: 3vh 1vw;
+margin: 0vh 3.6vw;
+font-size: 1.3rem;
+overflow: scroll;
+}
+
+
+.social{
+    box-shadow: 0 0 10px black;
+    width:85vw;
+    height:40vh;
+   
+    text-align: center;
+    margin: 5vh 5vw;
+    padding: 3vh 2vw;
+}
+.social p{
+    font-size: 3rem;
+
+}
+.social h4{
+font-size: 2rem;
+}
+}
+/* --------------------------------------MEDIA QUERY END-------------------------------------- */

@@ -1,0 +1,479 @@
+
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+            font-family: sans-serif;scroll-behavior: smooth;
+        }
+            .back{
+                width: 100%;
+                height: 100vh;
+            }
+            .back img{
+                position: absolute;
+                width: 100%;
+                height: 100vh;
+                z-index: -2;
+            }
+            a{
+                text-decoration: none;
+            }
+            .navbar{
+                width: 100vw;
+                height: 10vh;
+               position: fixed;
+            }
+            .navbar ul{
+                display: inline-flex;
+                float :right;
+                z-index: 2;
+                
+            }
+            .navbar ul li{
+                list-style: none;
+                padding: 8px 40px;
+                margin: 2vh 2vw;
+                color: rgb(255, 255, 255);
+                border-radius: 25px;
+                font-size: 1.2rem;
+                background-color: rgb(0, 0, 0);
+                             
+            }
+           
+           
+            .navbar ul li a
+            {text-decoration: none;
+                color: white;
+            }
+            .navbar li:hover{
+                background-color: rgb(214, 7, 255);
+                color: rgb(252, 252, 252);
+                box-shadow: 0 0 50px rgb(49, 46, 46);
+            }
+
+            #TogI{
+                color: white;
+                font-size: 30px;
+                margin-right: 40px;
+                line-height: 80px;
+                float: right;
+                cursor: pointer;
+                display: none;
+            }
+            .resume{
+                position: absolute;
+                top: 63vh;
+                left: 45vw;
+                width: 15vw;
+                height: 8vh;
+                border-radius: 25px 5px ;
+                border: none;
+                background-color: red;
+                color: white;
+                font-weight: 700;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .resume:hover{
+                color: black;
+                font-weight: 700;
+                background-color: yellow;
+                box-shadow: 0 0 40px rgb(248, 245, 47);
+
+            }
+           
+            #name1{
+                position: absolute;
+                top: 53vh;
+                left: 45vw; 
+                font-size: 30px;
+                color: rgb(159, 146, 235);
+            }
+               #name2{
+                position: absolute;
+                top: 53vh;
+                left: 56vw; 
+                font-size: 30px;
+                color: rgb(120, 207, 248);
+            }
+               .back p{
+                position: absolute;
+                top: 20vh;
+                left: 25vw; 
+                font-size: 25px;
+                color: white;
+            }
+           .back .wrapper{
+               display: inline-flex;
+               position: absolute;
+               top: 25vh;
+               left: 10vw; 
+           }
+           .static-text{
+            color: #4e4c5a;
+            font-size: 2.5rem;
+            font-weight: 500;
+            z-index: 15;
+           }
+
+           .dynamic-text{
+            /* padding-left: 10px; */
+            height: 10vh;
+            line-height: 40px;
+            overflow: hidden;
+            z-index: 15;
+            /* unhide to inspect  */
+        }
+        .dynamic-text li{
+         list-style: none; 
+         position: relative; 
+         height: 100%;; 
+         padding: 10px;
+         font-size: 2rem;
+         font-weight: 500;
+         line-height: 38px;
+         top: 0;
+         animation: slide 6s steps(4) infinite;
+         /* steps will be number of words */
+         }
+         @keyframes slide{
+             100%{
+               top: -198px;
+             }
+         }
+         .dynamic-text li span {
+             position: relative;
+             color: #fc6d6d;
+             
+         }
+         .dynamic-text li span::after {
+             content: '';
+             left: 0;
+             position: absolute;
+             border-left: 2px solid #fc6d6d;
+             height: 2.4rem;
+             width: 100%;
+            background-color: #f3f3f3;
+            animation: typing 1.5s steps(15) infinite;
+            /* step alays more than character   */
+         }
+         @keyframes typing{
+             100%{
+                 left:100%;
+             }
+         }
+
+
+            /* project :start */
+
+            .project{
+               width:100%;
+                height: 205vh;
+                position: absolute;
+                top: 100vh;
+                padding: 3vh 0vh;
+                z-index: -1;
+                background-color: #4e4c5a;
+               
+            }
+            .project1{
+                width: 85vw;
+                height: 50vh;
+                margin: 10vh 5vw;
+                padding: 1vh;
+                border-radius:90px 15px;
+                }
+
+                
+                .project1 img{
+                 width: 84vw;   
+                 height: 48vh;
+                 z-index: 2;
+                 opacity: 0.9;
+                 border-radius:20px ;
+                }
+
+                  /* contact start */
+
+
+
+           
+            .contact{
+                width: 100%;
+                height: 40vh;
+               position: absolute;
+                top: 305vh;
+                text-align: center;
+                color: rgb(255, 255, 255);
+                background-color: #4e4c5a;
+                
+               
+
+            }
+            .address{
+                width: 30vw;
+                height:30vh;
+                float: left;
+                margin: 2vh 0.5vw  ;
+                border: 3px solid white;
+                box-shadow: 0 0 10px white;
+                border-radius:  5px 35px;
+                font-size: 18px;
+                color: white;
+
+            } 
+            .email{
+                width: 35vw;
+                height:30vh;
+                float: left;
+                margin: 2vh 0.5vw  ; 
+                border: 3px solid white;
+                box-shadow: 0 0 10px white;
+                border-radius:  5px 35px;
+                text-align: center;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;    
+               
+            }
+            .email img{
+                
+                width: 6vw;
+                margin: 2vw;
+                border-radius: 20px;
+            }
+            .phone{
+                width: 30vw;
+                height: 30vh;
+                float: left;
+                margin:  2vh 0.5vw ; 
+                border: 3px solid white;
+                box-shadow: 0 0 10px white;
+
+                border-radius:  5px 35px;
+                color: rgb(255, 255, 255);
+                font-size: 20px;
+                
+            }
+
+
+
+
+
+
+
+
+
+            @media screen and (max-width: 800px){
+               
+                .back{
+                    width: 100%;
+                    height: 100vh;
+                }
+                .back img{
+                    position: absolute;
+                    width: 100%;
+                    height: 100vh;
+                    z-index: -2;
+                }
+            .navbar{
+                position: absolute;
+                height: 10vh;
+              
+            }
+           .navbar ul{
+                position: fixed;
+                width: 100vw;
+                height: 30vh;
+                background-color: rgb(23, 24, 31);
+                top: 50px;  
+                left: -100%;
+                transition:all .5s;
+                text-align: center;
+                display: block;
+                z-index: 3;
+                
+            }
+           .navbar ul li{
+                display: block;
+                list-style: none;
+                padding: 8px 40px;
+                width: 70%;
+                height: 8vh;
+                margin: 5vh  auto ;
+                border-radius: 25px;
+                font-size: 1.2rem;
+                background-color: rgb(120, 207, 248);
+                
+            }
+            ul li a{
+                color: black
+
+            }
+            .back .wrapper{
+                display: none;
+            }
+         
+              
+
+            #TogI{
+                position: fixed;
+                color: black;
+                display: block;
+                margin-left: 90vw;
+                line-height: 60px;
+                z-index: 3;
+            }
+           
+            ul.show{
+                left: 0;
+            }
+            a
+            {text-decoration: none
+            }
+            li:hover{
+                background-color: rgb(214, 7, 255);
+                color: rgb(252, 252, 252);
+                box-shadow: 0 0 50px rgb(49, 46, 46);
+            }
+        
+
+
+
+            .back img{
+                width: 100%;
+                height: 100vh;
+            }
+
+                .resume{
+                position: absolute;
+                top: 75vh;
+                left: vw;
+                width: 45vw;
+                height: 8vh;
+                border-radius: 25px 5px ;
+                background-color: red;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .resume:hover{
+                color: black;
+                background-color: yellow;
+                box-shadow: 0 0 40px rgb(248, 245, 47);
+                
+            }
+
+            #name1{
+                position: absolute;
+                top: 49vh;
+                left: 3vw;
+                font-size: 40px;
+                color: rgb(159, 146, 235);
+            }
+            #name2{
+                position: absolute;
+                top: 55vh;
+                left: 3vw; 
+                font-size: 40px;
+                color: rgb(120, 207, 248);
+            }
+            .resume{
+                position: absolute;
+                top: 65vh;
+                left: 3vw;   
+            }
+            
+            .back p{
+                position: absolute;
+                top: 65vh;
+                left: 3vw; 
+                font-size: 18px;
+                color: rgb(46, 45, 45);
+                font-weight: 500;
+            }
+            
+            .project{
+                height:200vh;
+                
+               
+            }
+            .contact{
+               width: 100vw;
+               height: 110vh;
+               top: 300vh;
+               display: inline-flex;
+               justify-content: center;
+               align-items: center;
+               flex-wrap: wrap;
+               background-color: #4e4c5a;
+            }
+            .address{
+                width: 90vw;
+                height:30vh;
+                float: left;
+                margin: 2vh 0.5vw  ; 
+                border-radius:  5px 35px;
+                font-size: 18px;
+                
+            } 
+            .email{
+                width: 90vw;
+                height:30vh;
+                float: left;
+                margin: 2vh 0.5vw  ; 
+                border-radius:  5px 35px;
+                text-align: center;
+                font-size: 20px;
+               
+            }
+            .email img{
+                width: 20vw;
+            }
+            .phone{
+                width: 90vw;
+                height: 30vh;
+                float: left;
+                margin:  2vh 0.5vw ; 
+                border-radius:  5px 35px;
+                font-size: 20px;
+                
+            }
+            }
+
+            @media screen and (max-width: 1290px) and (min-width:800px){
+                .back h1{
+                position: absolute;
+                top: 53vh;
+                left: 45vw; 
+                font-size: 30px;
+                color: rgb(159, 146, 235);
+            }
+               .back h2{
+                position: relative;
+                top: 53vh;
+                left: 57vw; 
+                font-size: 30px;
+                color: rgb(120, 207, 248);
+            }
+               .back p{
+                position: absolute;
+                top: 60vh;
+                left: 45vw; 
+                font-size: 25px;
+                color: white;
+            }
+
+           
+             .resume button{
+                position: absolute;
+                top: 63vh;
+                left: 45vw;
+                width: 15vw;
+                height: 8vh;
+                border-radius: 25px 5px ;
+                background-color: red;
+             } 
+             
+            }
+

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function(){
+			$('#TogI').click(function(){
+				$('ul').toggleClass('show');
+			})
+		
+		$('.nav-link').click(function(){
+                $('#menu').removeClass('show');
+            });
+		});
+	</script> 
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="back" id="home">
+        <img src="images/2.jpg" alt="" srcset="">
+        <div class="navbar">
+
+            <ul id= "menu">
+                <li> <a class="nav-link" href="#home"> home</a></li>
+                <li> <a class="nav-link" href="#contact"> Contact Me</a></li>
+            </ul>
+
+            <label id="TogI" onclick="myFunction()">
+                <i class="fas fa-bars"></i>
+            </label>
+        </div>
+
+        <div class="wrapper">
+        <div class="static-text"> I'm </div>
+        <ul class="dynamic-text">
+            <li><span>Laravel Developer</span></li>
+            <li><span>Web Designer</span></li>
+            <li><span>PHP Developer</span></li>
+            <li><span>Freelancer</span></li>
+        </ul>
+    </div>
+
+
+        <span id="name1"> SANDIP </span >
+        <span id="name2">MEMARIYA</span >
+      
+        <div>
+            <a href="resume/" download="sandipMemariya.pdf">
+                <button type="button" class="resume" >download resume</button></a>
+        </div>
+
+
+
+    </div>
+    <!----------------------------- project start ----------------------------->
+    <div class="project">
+        <div class="project1" id="project1">
+            <a href="https://github.com/sandip1912/Projects_complete"> <img src="images/project_1.PNG" alt="" srcset=""> </a>
+           </div>
+
+        <div class="project1" id="project2">
+            <a href="https://github.com/sandip1912/Projects_complete"> <img src="images/project_2.PNG" alt="" srcset=""> </a>
+        </div>
+
+        <div class="project1" id="project3">
+            <a href="https://github.com/sandip1912/Projects_complete"> <img src="images/project_3.PNG" alt="" srcset=""> </a>
+        </div>
+    </div>   
+    <!----------------------------- project end ----------------------------->
+    <script>
+        let pro1 = document.getElementById('project1');
+        let pro2 = document.getElementById('project2');
+        let pro3 = document.getElementById('project3');
+        
+        window.addEventListener("scroll",function(){
+         if (window.pageYOffset >200){
+            //  pro1.style.transform = "translatex(0)";
+             pro1.style.transitionDuration ="3s";
+             pro1.style.transform = "scale(1)";
+             pro1.style.opacity ="1";
+         }
+         else{
+             pro1.style.transform = "scale(0.3)";
+             pro1.style.opacity ="0";
+         }
+
+         if (window.pageYOffset >400){
+            pro2.style.transitionDuration ="3s";
+             pro2.style.transform = "scale(1)";
+             pro2.style.transitionDelay ="1s";
+             pro2.style.opacity ="1";
+        }else{
+            pro2.style.transform = "scale(0.3)";
+             pro2.style.opacity ="0";
+        }
+
+        if (window.pageYOffset >600){
+            pro3.style.transitionDuration ="3s";
+             pro3.style.transform = "scale(1)";
+             pro3.style.transitionDelay ="1s";
+             pro3.style.opacity ="1";
+        }else{
+            pro3.style.transform = "scale(0.3)";
+             pro3.style.opacity ="0";
+        }
+
+        });
+     </script>
+    
+    <!----------------------------- contact start ----------------------------->
+    <div class="contact" id="contact">
+        <h2>CONTACT INFO</h2>
+            <div class="phone"> <img src="" alt="" srcset="">
+                <h4>Just One Call</h4><br>
+                <p>+91-7779005027</p>
+                <p>+91-9924441147</p>
+               
+            </div>
+
+            <div class="email">
+                <a href="https://github.com/sandip1912"  target="_blank"><img src="images/github.png" alt="" srcset=""></a>
+                <a href="https://www.linkedin.com/in/sandip-memariya-851469215"  target="_blank"><img src="images/linkedin.png" alt="" srcset=""></a>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMVVzwJMmSnMdMfRCfJGGCKXKpLLZthDzJBqPmNpQFtzPXsZwSLvHrqqWfrzDbKXSXBnvrT" target="_blank"> <img src="images/Gmail.png" alt="" srcset=""></a>
+               
+            </div>
+
+            <div class="address"> <img src="" alt="" srcset="">
+                <h4>Address</h4><br>
+                <p>plot no-12,radhenagar <br>
+                    near akhilesh circle, <br>
+                    bhavnagar </p>
+            </div>
+
+        </div>
+        
+        
+  
+    
+    <!----------------------------- contact start ----------------------------->
+</body>
+
+</html>

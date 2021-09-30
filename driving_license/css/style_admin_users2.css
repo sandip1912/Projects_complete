@@ -27,7 +27,7 @@
 }
 #logout a{
     color: white;
-    font-size: 2rem;
+    font-size: 1rem;
     text-decoration: none;
 }
 /* <!-------------------- menu --------------------> */
@@ -153,9 +153,10 @@
        margin-right: 20px;
    }
    .profile ul li span{
-       font-size: 2rem;
+       font-size: 1rem;
    }
    .profile a{
+       font-size: 1rem;
        text-decoration: none;
        color: white;
    }

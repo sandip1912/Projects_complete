@@ -16,5 +16,5 @@ assumptions:
 2.those who have failed are considered as pending status applications.
 3.rejected applications wii have to fill new registration form ( fill application). 
 
-(responsive ness not considered because of shor time span & number of pages) 
+(responsiveness not considered because of shor time span & number of pages) 
 (other projects are responsive,)

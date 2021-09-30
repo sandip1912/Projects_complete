@@ -1,0 +1,121 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+/* ----------------------heading---------------------- */
+#heading{
+    width: 95%;
+    height: 18vh;
+    display: flex;
+    margin: auto;
+    background-color: #1CA6EF;
+  
+}
+#heading img{
+    width:80%;
+    height: 18vh;
+}
+#logout{
+    height: 10vh;
+    width: 10vw;
+    background-color: #1CA6EF;
+    margin: auto;
+    border: none;
+    border-radius: 10px;
+}
+#logout:hover{
+    background-color: #0586cc;
+}
+#logout a{
+    color: white;
+    text-decoration: none;
+}
+
+/* <!-------------------- menu --------------------> */
+#menu{
+    width: 95%;
+    margin-left: 2.47vw;
+    height: 150vh;
+    display: inline-flex;
+}
+    /* <!-------------------- options --------------------> */
+    #options{
+        width: 20%;
+        height: 150vh;
+        background-color:#1CA6EF;
+       padding: 2vh;
+    }
+    #options ul{
+        padding-left: 0;
+        display: inline-block;
+        list-style-type: none;
+    }
+    #options ul li{
+        margin : 3vh 4vw;
+        padding: 10px;
+        display: block;
+        text-align: center;
+    }
+    #options ul li:hover{
+        background-color: #0586cc;
+        border-radius: 10px;
+        font-weight: 600;
+    }
+    #options ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    /* <!-------------------- output --------------------> */
+    #output{
+        width: 80%;
+        height: 150vh;
+        border: 1px solid #0586cc;
+    }
+
+    table{
+        background-color: white;
+       width: 95%;
+       margin: 5vh auto;
+       border :3px solid #0586cc;
+       border-collapse: collapse;
+      
+   }
+   td{
+       border: 1px solid #0586cc;
+       padding: 15px;
+       color: #034a96;
+   }
+   th{
+       text-align: center;
+       color: #0586cc;
+       padding: 15px;
+       font-size: 30px;
+   }
+   
+   input[type = text],[type =password]{
+       width: 80%;
+       padding: 5px;
+   }
+   
+   td a{
+       text-decoration: none;
+       color: #0586cc;
+   }
+   td img{
+    height: 70px;
+    width: 60px;
+}
+   button{
+    border: none;
+    color: white;
+    width: 50px;
+    height: 30px;
+       color: white;
+    background-color: #0586cc;
+   }
+   #bt1{
+    width: 100px;  
+    border-radius: 5px;
+    margin: 0 5px;
+    height: 30px;
+   }
+

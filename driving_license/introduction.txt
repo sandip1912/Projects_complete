@@ -1,0 +1,17 @@
+project Name:- Driving License
+Description :-
+in this project we will see full process of generating a license.all documentation & test based processes are considered.
+
+validations:-
+1.driving license :-
+        1.those who are passed in test
+        2.non rejected applicsnts.
+        3.status - Active.
+2.test slot fill :-
+        1.date can be choose within 30days from current date.
+        2.status - Active.
+
+assumptions:
+1.all members have passed computer test and driving test.
+2.those who have failed are considered as pending status applications.
+3.rejected applications wii have to fill new registration form ( fill application). 

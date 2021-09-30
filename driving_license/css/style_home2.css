@@ -1,0 +1,180 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;scroll-behavior: smooth;
+}
+/* ----------------------heading---------------------- */
+#heading{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    margin: 2vh 0;
+
+  
+}
+#heading img{
+    width:20%;
+    margin:  auto ;
+    height: 15vh;
+}
+.head{
+    float: right;
+    margin: auto ;
+    padding-left: 10px;
+    width: 75%;
+    height: 15vh;
+    border-left: 3px solid black;
+}
+
+
+/* ----------------------heading---------------------- */
+
+#navbar{
+width: 100%;
+height: auto;
+padding: 10px;
+background: -webkit-linear-gradient(top, #3a96ce, #266184);
+display: inline-flex;
+    align-items: center;
+    list-style-type: none;
+    transition:all 0.5s;
+}
+#navbar ul{
+    margin-bottom: 0;
+    padding-left: 0;
+     height: 10vh;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    transition:all 5s;
+    transition-delay: 2s;
+}
+#navbar ul li{
+    margin-left : 1vw;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2px;
+    height: 8vh;
+    width: 14vw;
+    line-height: 30px;
+    border: 1px solid white;
+    transition-delay: 0.5s;
+}
+#navbar ul li:hover{
+    background-color: #266184;
+}
+#navbar ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+}
+/* ----------------------CAROUSEL---------------------- */
+/* ----------------------LICENSE SERVICE---------------------- */
+#licenseService{
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    /* background-color: lightgreen; */
+}#cards{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Lservice{
+    width: 30%;
+    height: 50vh;
+    margin: auto;
+    padding: 3vh 3vw;
+    border-radius: 20px;
+    border: 2px solid rgb(92, 91, 91);
+    text-align: center;
+}
+.Lservice:hover{
+    /* background-color: lightsalmon; */
+    border:2px solid #124dac;
+    box-shadow: 0px 2px 2px  rgb(92, 91, 91);
+}
+.Lservice img{
+    width: 30%;
+    margin-bottom: 4vh;
+}
+.Lservice button{
+    width: 8vw;
+    height: 6vh;
+    border-radius: 10px;
+    
+    border: none;
+    background: -webkit-linear-gradient(top, #3a96ce, #266184);
+  
+}
+.Lservice button a{
+    text-decoration: none;
+    color: white;
+}
+/* ----------------------about us---------------------- */
+#about_us{
+    width: 100%;
+    height: 75vh;
+    color: white;
+    /* text-align: center; */
+    margin:0 auto;
+    padding: 3vh 5vw;
+    background: -webkit-linear-gradient(top, #266184, #3a96ce);
+    /* background: -webkit-linear-gradient(top, #3a96ce, #266184); */
+}
+#about_us h3{
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 2vh;
+}
+#about_us p{
+    font-size: 0.83rem;
+}
+#about_us li{
+    font-size: 0.83rem;
+    margin-right: 20px;
+}
+/* ----------------------contact us---------------------- */
+#contact_us{
+    width: 100%;
+    height: 55vh;
+    color: rgb(2, 79, 109);
+    text-align: center;
+    margin:2vh auto;
+}
+#contact_us h3{
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 2vh;
+  }
+
+#contact_us table{
+   width: 95%;
+   margin:auto;
+   border :3px solid rgb(2, 79, 109);
+   border-collapse: collapse;
+  
+}
+#contact_us table td{
+   border: 1px solid rgb(2, 79, 109);
+   padding: 5px;
+   color: rgb(2, 79, 109);
+}
+/* ----------------------FOOTER---------------------- */
+#footer{
+    width: 100%;
+    height: 10vh;
+    color: white;
+    text-align: center;
+    padding: 3vh 0;
+    background: -webkit-linear-gradient(top, #3a96ce, #266184);
+}
+#footer h6{
+    line-height: 5vh;
+}
+
+
